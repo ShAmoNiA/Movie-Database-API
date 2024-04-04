@@ -1,7 +1,7 @@
 # Movie-Database-API
 
 ## Overview:
-The project aims to create a Movie Database API using Python, which interacts with the OMDB API to fetch movie data. The API will be deployed on Google Cloud Platform (GCP) to ensure scalability and reliability. The project comprises three main components: fetching data from the OMDB API and storing it in a database, implementing various API endpoints for CRUD operations, and conducting unit tests to ensure robustness.
+The project aims to create a Movie Database API using Python, which interacts with the OMDB API to fetch movie data. The project comprises three main components: fetching data from the OMDB API and storing it in a database, implementing various API endpoints for CRUD operations, and conducting unit tests to ensure robustness.
 
 ### Running Command:
 ```
