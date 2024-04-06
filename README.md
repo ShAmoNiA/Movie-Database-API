@@ -19,16 +19,16 @@ python -m pytest test.py
 Fetches 100 movies from the OMDB API.
 Saves movies in the database.
 Executes data fetching only if the database is empty.
-API Implementation:
+### API Implementation:
 
-### List Movies Endpoint:
+#### List Movies Endpoint:
 - Returns a list of movies from the database.
 - Allows customization of the number of records returned in a single API response (default: 10).
 - Implements pagination.
 - Orders data by movie title.
 #### Get Single Movie Endpoint:
 - Returns details of a single movie based on its title.
-Add Movie Endpoint:
+#### Add Movie Endpoint:
 - Adds a new movie to the database.
 - Requires providing the movie title in the request.
 - Fetches all movie details from the OMDB API and saves them in the database.
@@ -52,12 +52,12 @@ Tests cover scenarios like fetching movies, adding movies, removing movies, etc.
 
 
 - Load configurations from the config.ini file, including OMDB API key, file paths, and authentication details.
-Data Initialization:
+#### Data Initialization:
 
 - Initialize instances of OMDBAPI and DataHandler classes for interacting with the OMDB API and managing data, respectively.
 Check if the movies JSON file exists; if not, fetch movies from the OMDB API and save them to the file.
 Initialize the database if it's empty, using data from the movies JSON file.
-Authentication Setup:
+#### Authentication Setup:
 
 - Define a function get_current_username to authenticate users based on HTTP Basic Authentication.
 Validate the provided username and password against the configured credentials.
@@ -71,7 +71,7 @@ API Endpoint Implementation:
 #### Error Handling:
 
 - Handle errors such as movie not found, existing movie in the database, unauthorized access, etc., using HTTPException.
-Database Operations:
+#### Database Operations:
 
 - Perform database operations for fetching, adding, and deleting movies.
 - Execute SQL queries to interact with the SQLite database.
